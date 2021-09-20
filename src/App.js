@@ -8,10 +8,12 @@ import TransactionComp from "./Components/Transactions/TransactionComp";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <CreditScore />
-      <Budget />
-      <TransactionComp />
+      <Router>
+        <Navbar />
+        <CreditScore />
+        <Budget />
+        <TransactionComp />
+      </Router>
     </div>
   );
 }
