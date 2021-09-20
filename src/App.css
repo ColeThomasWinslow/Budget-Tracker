@@ -64,3 +64,88 @@ button.Auth {
 button.Auth:hover {
   background: white;
 }
+div.Home {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+}
+div.CreditBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(229, 229, 229);
+  width: 250px;
+  padding: 20px;
+  box-shadow: grey 0px 0px 10px;
+}
+div.ScoreBox {
+  width: 80%;
+  box-shadow: grey 2px 2px 10px;
+  text-align: center;
+  background: white;
+}
+h3.Title {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+h2.Score {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+p.CreditStatus {
+  color: rgb(58, 125, 37);
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+div.IncomeBox {
+  width: 100%;
+}
+div.Statement {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+p.Label {
+  box-shadow: grey 2px 2px 12px;
+  flex: 1;
+  padding: 5px;
+  background: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p.Salary {
+  background: rgb(58, 125, 37);
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+p.Bills {
+  background: rgb(178, 41, 41);
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+p.Savings {
+  background: rgb(25, 136, 123);
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+h4.Income {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 28px;
+}

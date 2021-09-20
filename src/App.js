@@ -10,9 +10,11 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <CreditScore />
-        <Budget />
-        <TransactionComp />
+        <div className="Home">
+          <Route path="/Home" component={CreditScore} />
+          <Route path="/Home" component={Budget} />
+          <Route path="/Home" component={TransactionComp} />
+        </div>
       </Router>
     </div>
   );
