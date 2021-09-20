@@ -23,6 +23,9 @@ a.link {
   font-weight: bold;
   text-decoration: none;
 }
+a.link:hover {
+  color: rgb(180, 249, 111);
+}
 div.Logo {
   flex: 1;
   font-size: 20px;
@@ -35,6 +38,11 @@ a.LogoLink {
   font-size: 25px;
   color: white;
   font-weight: bold;
+  transition: all 0.5s;
+}
+a.LogoLink:hover {
+  color: rgb(21, 62, 12);
+  opacity: 80%;
 }
 div.LinkBox {
   display: flex;
@@ -43,9 +51,6 @@ div.LinkBox {
   padding: 20px;
 }
 
-a:hover {
-  color: rgb(180, 249, 111);
-}
 div.AuthBox {
   padding: 20px;
 }
@@ -68,17 +73,22 @@ div.Home {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   justify-content: space-evenly;
 }
-div.CreditBox {
+div.Box {
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  height: 550px;
   background: rgb(229, 229, 229);
-  width: 250px;
+  width: 85vw;
+
+  max-width: 380px;
+  margin-top: 20px;
   padding: 20px;
   box-shadow: grey 0px 0px 10px;
 }
@@ -91,6 +101,9 @@ div.ScoreBox {
 h3.Title {
   text-transform: uppercase;
   margin: 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: rgb(112, 112, 112);
   margin-bottom: 15px;
 }
 h2.Score {
@@ -138,7 +151,7 @@ p.Bills {
   color: white;
 }
 p.Savings {
-  background: rgb(25, 136, 123);
+  background: rgb(25, 99, 136);
   width: 100px;
   padding: 5px;
   text-align: center;
@@ -147,5 +160,58 @@ p.Savings {
 h4.Income {
   text-transform: uppercase;
   margin: 0px;
+  font-size: 18px;
   margin-top: 28px;
+}
+p.MonthInc {
+  margin-top: 10px;
+  font-weight: bold;
+  background: white;
+  width: 100%;
+  box-shadow: grey 2px 2px 12px;
+  text-align: center;
+  padding: 10px;
+}
+p.Negative {
+  background: rgb(178, 41, 41);
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+div.Upcoming {
+  height: 200px;
+  margin-top: 40px;
+}
+button.AddBtn {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+  background: rgb(58, 125, 37);
+  border: 2px solid white;
+  color: white;
+  transition: all 0.5s;
+}
+button.AddBtn:hover {
+  background-color: white;
+  color: rgb(58, 125, 37);
+  border: 2px solid rgb(58, 125, 37);
+  cursor: pointer;
+}
+h4.Monthly {
+  margin-top: 0px;
+}
+p.LinkBank {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+  color: rgb(91, 91, 91);
+  width: 50%;
+
+  text-align: center;
 }

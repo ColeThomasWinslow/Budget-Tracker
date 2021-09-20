@@ -3,7 +3,7 @@ import React from "react";
 function CreditScore() {
   return (
     <div>
-      <div className="CreditBox">
+      <div className="Box">
         <h3 className="Title">Your Credit Score</h3>
         <div className="ScoreBox">
           <h2 className="Score">800</h2>

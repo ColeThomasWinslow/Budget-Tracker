@@ -13,10 +13,10 @@ function Navbar() {
         </div>
         <div className="LinkBox">
           <Link className="link" to="/Account">
-            Account Settings
+            Account
           </Link>
           <Link className="link" to="/Finance">
-            Edit Finance Details
+            Finance Details
           </Link>
           <Link className="link" to="/Banking">
             Link Banking
