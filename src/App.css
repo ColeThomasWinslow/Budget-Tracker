@@ -118,6 +118,14 @@ p.CreditStatus {
   text-transform: uppercase;
   font-size: 12px;
 }
+p.Poor {
+  color: rgb(178, 41, 41);
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 div.IncomeBox {
   width: 100%;
 }
@@ -214,4 +222,88 @@ p.LinkBank {
   width: 50%;
 
   text-align: center;
+}
+div.FDBox {
+  border-radius: 10px;
+  margin-top: 30px;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: rgb(229, 229, 229);
+  align-items: center;
+  box-shadow: grey 0px 0px 10px;
+}
+h4.Question {
+  background: rgb(158, 158, 158);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 15px;
+  font-size: 15px;
+  width: 85vw;
+  max-width: 500px;
+  text-transform: uppercase;
+}
+div.IncomeAdd {
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+input.InputIncome {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+div.Investment {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  align-items: baseline;
+}
+p.InvType {
+  text-align: left;
+  width: 200px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+
+  margin-left: 20px;
+}
+input.CreditRange {
+  width: 80%;
+  margin-bottom: 30px;
+}
+div.FinanceData {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+button.Custom {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+h5.ComingSoon {
+  letter-spacing: 5px;
+  text-decoration: underline;
+  color: rgb(58, 125, 37);
+  text-transform: uppercase;
+  width: 500px;
+  line-height: 60px;
+}
+div.BankingBox {
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 }

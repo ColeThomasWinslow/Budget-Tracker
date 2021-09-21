@@ -2,8 +2,8 @@ import React from "react";
 
 function LinkBanking() {
   return (
-    <div>
-      <h2>Linking bank accounts coming soon!</h2>
+    <div className="BankingBox">
+      <h5 className="ComingSoon">Linking bank accounts coming soon!</h5>
     </div>
   );
 }
