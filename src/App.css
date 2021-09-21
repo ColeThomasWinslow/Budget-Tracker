@@ -78,7 +78,7 @@ div.Home {
   justify-content: space-evenly;
 }
 div.Box {
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -99,11 +99,14 @@ div.ScoreBox {
   background: white;
 }
 h3.Title {
+  padding: 10px;
   text-transform: uppercase;
   margin: 0px;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 2px;
-  color: rgb(112, 112, 112);
+  background: rgb(158, 158, 158);
+  width: 112%;
+  color: rgb(255, 255, 255);
   margin-bottom: 15px;
 }
 h2.Score {
@@ -239,8 +242,10 @@ h4.Question {
   background: rgb(158, 158, 158);
   color: white;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
   text-align: left;
+  letter-spacing: 2px;
   padding: 15px;
   font-size: 15px;
   width: 85vw;
