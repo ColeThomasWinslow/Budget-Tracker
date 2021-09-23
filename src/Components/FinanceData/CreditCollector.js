@@ -7,8 +7,8 @@ function CreditCollector() {
       <h4 className="Question">What is your Credit Score?</h4>
       <h2 className="Score">{Credit}</h2>
 
-      {Credit >= 670 && <p className="CreditStatus">Good Credit</p>}
-      {Credit <= 670 && (
+      {Credit >= 600 && <p className="CreditStatus">Great Credit</p>}
+      {Credit <= 600 && (
         <p className="CreditStatus Poor">Below Average Credit</p>
       )}
       <input

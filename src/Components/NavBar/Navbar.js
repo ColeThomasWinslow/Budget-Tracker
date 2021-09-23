@@ -7,11 +7,14 @@ function Navbar() {
     <div>
       <div className="NavCont">
         <div className="Logo">
-          <Link className="LogoLink" to="/Home">
+          <Link className="LogoLink" to="/">
             BUDGET-TRACKER $
           </Link>
         </div>
         <div className="LinkBox">
+          <Link className="link" to="/Home">
+            Home
+          </Link>
           <Link className="link" to="/Account">
             Account
           </Link>

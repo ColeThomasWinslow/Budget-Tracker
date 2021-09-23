@@ -41,6 +41,9 @@ function Budget() {
           <Modal.Header>
             <Modal.Title>Add Budget Item</Modal.Title>
           </Modal.Header>
+          <Modal.Body>
+            <input type="number" />
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={closeForm}>
               Cancel
