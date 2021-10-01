@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalState";
-
+import { CommaGen } from "../utils/CommaGen";
 export const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
   const amounts = transactions.map((transaction) => transaction.amount);
@@ -19,11 +19,11 @@ export const IncomeExpenses = () => {
     <div className="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p className="money plus">${income}</p>
+        <p className="money plus">${CommaGen(income)}</p>
       </div>
       <div>
         <h4>Expense</h4>
-        <p className="money minus">-${expense}</p>
+        <p className="money minus">-${CommaGen(expense)}</p>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalState";
-
+import { CommaGen } from "../utils/CommaGen";
 export const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
   const sign = transaction.amount < 0 ? "-" : "+";
@@ -8,7 +8,7 @@ export const Transaction = ({ transaction }) => {
     <li className={transaction.amount < 0 ? "minus" : "plus"}>
       {transaction.text}
       <span>
-        {sign}${Math.abs(transaction.amount)}
+        {sign}${CommaGen(Math.abs(transaction.amount))}
       </span>
       <button
         onClick={() => deleteTransaction(transaction.id)}
