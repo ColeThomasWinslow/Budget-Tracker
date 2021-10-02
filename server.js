@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "development") {
 app.use("/api/v1/transactions", transactions);
 
 if (process.env.NODE_ENV === "production") {
-  this.app.use(express.static(path.join(__dirname, "../client/build")));
+  app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
 const PORT = process.env.PORT || 5000;
