@@ -3,6 +3,7 @@ import axios from "axios";
 import AppReducer from "./AppReducer";
 const initialState = {
   transactions: [],
+  user: {},
   error: null,
   loading: true,
 };
@@ -14,18 +15,22 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  // Actions
-  async function getTransactions() {
+  // Actions Transactions
+  async function getTransactions(email) {
     try {
       const res = await axios.get("/api/v1/transactions");
+      const UserTransaction = res.data.data.filter((value) => {
+        if (value.owner.toLowerCase().includes(email.toLowerCase())) {
+          return value;
+        }
+      });
       dispatch({
         type: "GET_TRANSACTIONS",
-        payload: res.data.data,
+        payload: UserTransaction,
       });
     } catch (err) {
       dispatch({
         type: "TRANSACTION_ERROR",
-        payload: err.response.data.error,
       });
     }
   }
@@ -64,10 +69,33 @@ export const GlobalProvider = ({ children }) => {
     }
   }
 
+  //*//
+  // Actions Users
+  async function addNewUser(user) {
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    try {
+      const res = await axios.post("api/v1/users", user, config);
+      dispatch({
+        type: "ADD_USER",
+        payload: res.data.data,
+      });
+    } catch (err) {
+      dispatch({
+        type: "TRANSACTION_ERROR",
+        payload: err.response.data.error,
+      });
+    }
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         transactions: state.transactions,
+        addNewUser,
         deleteTransaction,
         addTransaction,
         getTransactions,

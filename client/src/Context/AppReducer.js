@@ -1,6 +1,12 @@
 // eslint-disable-next-line
 export default (state, action) => {
   switch (action.type) {
+    case "ADD_USER":
+      return {
+        ...state,
+        user: action.payload,
+      };
+
     case "GET_TRANSACTIONS":
       return {
         ...state,
