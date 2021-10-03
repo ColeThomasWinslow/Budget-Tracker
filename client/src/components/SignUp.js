@@ -20,6 +20,7 @@ export const SignUp = () => {
       password: Password,
     };
     // function from Context giving the payload
+    localStorage.setItem("user", JSON.stringify(newUser));
     addNewUser(newUser);
     setUser(newUser);
   };
