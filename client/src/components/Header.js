@@ -5,25 +5,25 @@ export const Header = () => {
   const { user, setUser } = useContext(UserContext);
 
   return (
-    <div>
-      <Link to="/">
-        <h2>Budget Tracker</h2>
-      </Link>
-      {user && (
-        <div>
+    <div className="AccBox">
+      <div className="HeaderCont">
+        <Link to="/">
+          <img width="200px" src="/images/BTrackerLogo.png" />
+        </Link>
+        {user && (
           <div>
             <button
-              className="btn"
+              className="Logout"
               onClick={() => {
                 setUser(null);
               }}
             >
               <Link to="/"> Logout</Link>
             </button>
-            <p>Signed in As : {user.email}</p>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+      {user && <p className="SignedIn">Signed in As : {user.email}</p>}
     </div>
   );
 };

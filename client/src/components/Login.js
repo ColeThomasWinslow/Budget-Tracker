@@ -29,7 +29,7 @@ export const Login = () => {
             type="text"
             placeholder="Password"
           />
-          <button>Login</button>
+          <button className="LoginBtn">Login</button>
         </form>
       )}
     </div>

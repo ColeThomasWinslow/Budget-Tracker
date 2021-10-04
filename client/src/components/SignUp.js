@@ -27,7 +27,7 @@ export const SignUp = () => {
   return (
     <div>
       {user ? (
-        <div>
+        <div className="GoTracker">
           <Link to="/tracker">
             <h2>Go to your tracker</h2>
           </Link>
@@ -50,7 +50,7 @@ export const SignUp = () => {
             type="text"
             placeholder="Password"
           />
-          <button>Set user</button>
+          <button className="LoginBtn">Create Account</button>
         </form>
       )}
     </div>

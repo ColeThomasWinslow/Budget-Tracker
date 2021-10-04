@@ -5,7 +5,10 @@
 * {
   box-sizing: border-box;
 }
-
+* a {
+  text-decoration: none;
+  color: rgb(137, 176, 137);
+}
 body {
   background-color: #f7f7f7;
   display: flex;
@@ -13,17 +16,17 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
   margin: 0;
   font-family: sans-serif;
 }
 
 .container {
-  margin: 30px auto;
-  width: 350px;
+  margin: 20px auto;
 }
 
 h1 {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -83,11 +86,12 @@ input[type="number"] {
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  margin-top: 5px;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #18340b;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -134,16 +138,69 @@ input[type="number"] {
   border: 0;
   color: #fff;
   font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: all 0.5s;
 }
 
 .list li:hover .delete-btn {
-  opacity: 1;
+  background: black;
+}
+.AccBox {
+  width: 90vw;
+  max-width: 400px;
+}
+p.SignedIn {
+  margin: 0px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid green;
+  background-color: rgb(131, 180, 131);
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+.HeaderCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button.Logout {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+
+  background: rgb(45, 45, 45);
+}
+.Logout:hover {
+  opacity: 80%;
+}
+.LoginBtn {
+  border: none;
+  margin-top: 20px;
+  padding: 5px;
+  border: 2px solid green;
+  color: rgb(19, 124, 7);
+  width: 150px;
+}
+.LoginBtn:hover {
+  opacity: 60%;
+}
+div.GoTracker {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.GoTracker:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+div.GoTracker a {
+  color: rgb(52, 52, 52);
 }
