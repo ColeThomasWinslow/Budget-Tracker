@@ -8,7 +8,7 @@ export const Header = () => {
     <div className="AccBox">
       <div className="HeaderCont">
         <Link to="/">
-          <img width="200px" src="/images/BTrackerLogo.png" />
+          <img width="150px" src="/images/BTrackerLogo.png" />
         </Link>
         {user && (
           <div>

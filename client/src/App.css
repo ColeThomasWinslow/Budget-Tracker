@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-
+  zoom: 80%;
   margin: 0;
   font-family: sans-serif;
 }
@@ -28,6 +28,7 @@ body {
 h1 {
   letter-spacing: 2px;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -37,6 +38,7 @@ h3 {
 }
 
 h4 {
+  text-align: center;
   margin: 0;
   text-transform: uppercase;
 }
@@ -46,6 +48,8 @@ h4 {
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
+  width: 90vw;
+  max-width: 800px;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -66,7 +70,7 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #1f7a45;
 }
 
 .money.minus {
@@ -126,11 +130,11 @@ input[type="number"] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid #2a9657;
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #d4230f;
 }
 
 .delete-btn {
@@ -147,7 +151,8 @@ input[type="number"] {
 }
 .AccBox {
   width: 90vw;
-  max-width: 400px;
+  margin-top: 20px;
+  max-width: 800px;
 }
 p.SignedIn {
   margin: 0px;
@@ -176,7 +181,7 @@ button.Logout {
   background: rgb(45, 45, 45);
 }
 .Logout:hover {
-  opacity: 80%;
+  cursor: pointer;
 }
 .LoginBtn {
   border: none;
@@ -187,7 +192,7 @@ button.Logout {
   width: 150px;
 }
 .LoginBtn:hover {
-  opacity: 60%;
+  cursor: pointer;
 }
 div.GoTracker {
   display: flex;
@@ -199,7 +204,6 @@ div.GoTracker {
   text-transform: uppercase;
 }
 .GoTracker:hover {
-  opacity: 50%;
   cursor: pointer;
 }
 div.GoTracker a {
